@@ -1,0 +1,463 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0 !important;
+    color: #333;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+    /*余白や線を幅や高さに含める*/
+}
+
+img {
+    max-width: 80%;
+}
+
+.logo_img {
+    width: 450px;
+    margin: 3px 2px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.logo_img img {
+    vertical-align: top;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h2 {
+    padding-top: 30px;
+}
+
+
+/* ヘッダー全体のスタイル */
+header {
+    background-color: #333;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*z-index: 1000; いらない */
+}
+
+.h2_top{
+    margin-top: 50px;
+}
+
+/* ヘッダー内のコンテナ */
+header div {
+    /*max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+
+/* タイトルのスタイル */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-right: 250px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+/* ナビゲーションバーのスタイル */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #b6b6b6;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: #00915e;
+    font-size: 2em;
+    border-bottom: 2px solid #00915e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*会社概要*/
+
+.company-info p {
+    line-height: 50px;
+}
+
+/*仕事内容*/
+
+/*プロジェクト*/
+
+.project-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: auto;
+}
+
+.project-text {
+    display: inline-block;
+    margin-left: 15px;
+    width: 40%;
+}
+
+.project {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.project1 {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+}
+
+.project-link {
+    background-color: #00915e;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: #fff;
+    min-width: 200px;
+    /* 最低200pxを確保 */
+    height: 56px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 16px;
+    /* テキスト横の余白がキツキツにならないように */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-link:hover {
+    color: #fff;
+    background-color: #00915e;
+    border-color: #00915e;
+}
+
+.project-link:active {
+    background-color: #007428;
+    border-color: #007428;
+}
+
+/*チームメンバー*/
+
+.team-member {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.team-member img {
+    height: 500px;
+    width: auto;
+}
+
+.team-text h3 {
+    font-size: 32px;
+}
+
+.team-text h4 {
+    font-size: 22px;
+}
+
+
+
+.team-main-visual {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.hiddenmenu {
+    display: none;
+}
+
+/*求人情報*/
+
+.asu_text{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.asu_h3{
+    font-size: 23px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/*ハンバーガーメニュー*/
+/*--------------------------------------------------------------------------------------*/
+.hiddenmenu {
+    display: block;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+    transition: 1s;
+}
+
+.float-r {
+    float: right;
+}
+
+.menu {
+    margin: 0;
+    padding-right: 100px;
+    vertical-align: middle;
+}
+
+.openbtn1 {
+    position: relative;
+    /*ボタン内側の基点となるためrelativeを指定*/
+    background: #666666;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    transform: translateX(23px)translateY(20px);
+}
+
+/*ボタン内側*/
+.openbtn1 span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+    top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+    /*真ん中の線は透過*/
+}
+
+.openbtn1.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn1.active {
+    transform: translateX(69px)translateY(20px);
+
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+    background: #f3f3f3;
+    padding: 20px;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.lead {
+    margin: 20px 0 0 0;
+}
+
+.btn-block {
+    width: 200px;
+    padding: 30px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+@media screen and (max-width: 677px) {
+    .menu {
+        margin: 0;
+        padding-right: 50px;
+        vertical-align: middle;
+    }
+
+    .menuitem ul li a {
+        font-size: 0.8rem;
+    }
+
+    .menuitem {
+        white-space: nowrap;
+    }
+
+    .openbtn1.active {
+        transform: translateX(67px)translateY(15px);
+
+    }
+
+    .logo_img {
+        width: 300px;
+        margin: 3px 2px;
+        object-fit: cover;
+    }
+
+    .menu {
+        margin: 0;
+        padding-right: 50px;
+        vertical-align: middle;
+    }
+
+    .openbtn1 {
+        position: relative;
+        /*ボタン内側の基点となるためrelativeを指定*/
+        background: #666666;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        transform: translateX(20px)translateY(15px);
+    }
+
+    /*ボタン内側*/
+    .openbtn1 span {
+        display: inline-block;
+        transition: all .4s;
+        /*アニメーションの設定*/
+        position: absolute;
+        left: 8px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .openbtn1 span:nth-of-type(1) {
+        top: 7px;
+    }
+
+    .openbtn1 span:nth-of-type(2) {
+        top: 15px;
+    }
+
+    .openbtn1 span:nth-of-type(3) {
+        top: 23px;
+    }
+
+    /*activeクラスが付与されると線が回転して×に*/
+
+    .openbtn1.active span:nth-of-type(1) {
+        top: 8px;
+        left: 11px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn1.active span:nth-of-type(3) {
+        top: 20px;
+        left: 11px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+}

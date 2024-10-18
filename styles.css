@@ -194,7 +194,6 @@ section h2 {
     height: 56px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
     padding: 0 16px;
     /* テキスト横の余白がキツキツにならないように */
     display: inline-flex;
@@ -259,6 +258,32 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.entry-w {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.entry {
+    width:fit-content;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00915e;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entry:hover {
+    background-color: #00915e;
+    transform: translateY(-2px);
+}
+
+.entry:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /*ハンバーガーメニュー*/
 /*--------------------------------------------------------------------------------------*/
 .hiddenmenu {
@@ -375,6 +400,8 @@ a {
     width: 200px;
     padding: 30px;
 }
+
+
 
 /*--------------------------------------------------------------------------------------*/
 @media screen and (max-width: 677px) {

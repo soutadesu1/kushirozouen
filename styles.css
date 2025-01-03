@@ -54,6 +54,14 @@ header {
     margin-top: 50px;
 }
 
+.h3_top{
+    color: #00915e;
+    font-size: 1.5em;
+    border-bottom: 2px solid #00915e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
 /* ヘッダー内のコンテナ */
 header div {
     /*max-width: 1200px;
